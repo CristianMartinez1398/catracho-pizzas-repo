@@ -25,3 +25,19 @@
 #container a {
   text-decoration: none;
 }
+
+#longitud_imagen{
+  width: 250px;
+  margin-top: 4%;
+}
+
+#longitud_titulo{
+  font-size: 2.5ch;
+  color: red;
+  font-family: serif;
+}
+
+#longitud_parrafo{
+  color: black;
+  font-size: small;
+}
