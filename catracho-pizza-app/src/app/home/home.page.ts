@@ -1,13 +1,14 @@
 import { Component } from '@angular/core';
 import { IonCardSubtitle } from '@ionic/angular';
-import { IonHeader, IonToolbar, IonTitle, IonContent, IonCard, IonCardTitle, IonCardContent, IonBackButton, IonButtons, IonInput } from '@ionic/angular/standalone';
+import { IonHeader, IonToolbar, IonTitle, IonContent, IonCard, IonCardTitle, IonCardContent, IonBackButton, IonButtons, IonInput, IonList, IonItem } from '@ionic/angular/standalone';
 
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.css'],
+  
   standalone: true,
-  imports: [IonHeader, IonToolbar, IonTitle, IonContent, IonCard, IonCardTitle, IonCardContent, IonButtons, IonInput],
+  imports: [IonHeader, IonToolbar, IonTitle, IonContent, IonCard, IonCardTitle, IonCardContent, IonButtons, IonInput, IonList, IonItem],
 })
 export class HomePage {
 

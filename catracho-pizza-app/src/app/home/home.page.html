@@ -14,20 +14,35 @@
   </ion-header>
 
   <div id="container">
-    <ion-card>
+    <ion-card class="longitud_card">
       <img id="longitud_imagen" src="https://www.pizzahut.com.gt/static/media/images/images/jpg/2327_10_21-02-2023-12-24.jpg">
       <ion-card-title id="longitud_titulo">BIG NEW YORKER BACON & BANANA PEPPERS</ion-card-title>
-      <ion-card-content id="longitud_parrafo">Es una pizza de gran tamaño, inspirada al estilo New York con rebanadas grandes, de pepperoni y trocitos de bacon, con abundante rebanadas de chile banana peppers de sabor suave con toque ácido, con una mezcla de orégano y queso parmesano sobre los ingredientes y mantequilla de ajo a la orilla</ion-card-content>
-      <h6>Desde: <h6>LPS. {{precio}}</h6></h6>
-      <div>
-        <div>
-          cantidad: 
-          <ion-buttons (click)="resta()">-</ion-buttons>
-          <ion-input [value]="numero"></ion-input>
-          <ion-buttons (click)="sum()">+</ion-buttons>
-        </div>
-        <ion-buttons>Ordenar</ion-buttons>
-      </div>
+      <ion-list>
+      <ion-item id="longitud_parrafo">
+        <ion-card-content>Es una pizza de gran tamaño, inspirada al estilo New York con rebanadas grandes, de pepperoni y trocitos de bacon, con abundante rebanadas de chile banana peppers de sabor suave con toque ácido, con una mezcla de orégano y queso parmesano sobre los ingredientes y mantequilla de ajo a la orilla</ion-card-content>
+      </ion-item>
+          <div class="posicion-titulo-precio">
+            <h6>Desde:  </h6>
+            <h6 class="titulo-precio">LPS. {{precio.toFixed(2)}}</h6>
+          </div>
+          
+          <div class="posicion">
+            <div class="posicion-cantidad">
+              <h6>Cantidad:</h6>
+               
+              <div class="posicion-btn">
+                <ion-buttons class="btn-resta" (click)="resta()">-</ion-buttons>
+                <ion-input class="tamano-input" [value]="numero"></ion-input>
+                <ion-buttons class="btn-suma" (click)="sum()">+</ion-buttons>
+              </div>
+              
+            </div>
+            <ion-buttons class="btn" >ORDENAR</ion-buttons>
+          </div>
+        
+        
+      </ion-list>
+      
     </ion-card>
-  </div>
+    </div>
 </ion-content>
